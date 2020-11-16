@@ -17,6 +17,15 @@ export const reducer = (state = initialState, action) => {
         case types.FETCH_ARTICLE_FAILURE:
             return { ...state, isLoading: false, error: action.payload, article: {} };
 
+        case types.DELETE_ARTICLE_REQUEST:
+            return { ...state, isLoading: true };
+
+        case types.DELETE_ARTICLE_SUCCESS:
+            return { ...state, isLoading: false };
+
+        case types.DELETE_ARTICLE_FAILURE:
+            return { ...state, isLoading: false, error: action.payload };
+
         default:
             return state;
     }
