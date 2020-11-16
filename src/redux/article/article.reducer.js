@@ -1,10 +1,10 @@
 import { types } from "../article/article.types";
-import { act } from "react-dom/test-utils";
+
 
 const initialState = {
     isLoading: true,
     error: "",
-    article: {},
+    article: [],
 };
 
 export const reducer = (state = initialState, action) => {

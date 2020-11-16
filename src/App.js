@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./structures/header/header.component";
 import Parent from "./components/parent/parent.component";
 import Post from "./pages/post/post.component";
-import Article from "./pages/article/article.component";
+import SingleArticle from "./pages/article/article.component";
 import "./app.style.scss";
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
                 <Switch>
                     <Route exact path="/" component={Parent} />
                     <Route exact path="/post-article" component={Post} />
-                    <Route exact path="/article" component={Article} />
+                    <Route exact path="/article" component={SingleArticle} />
                 </Switch>
             </Router>
         </>
