@@ -17,7 +17,6 @@ const SingleArticle = (props) => {
         dispatch(fetchArticleRequest(idSearchParam));
     }, []);
 
-    console.log("Article", singleArticle);
     return (
         <Main>
             <article>

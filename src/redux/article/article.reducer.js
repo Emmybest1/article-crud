@@ -1,6 +1,5 @@
 import { types } from "../article/article.types";
 
-
 const initialState = {
     isLoading: true,
     error: "",
