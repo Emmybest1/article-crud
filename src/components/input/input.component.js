@@ -7,7 +7,7 @@ const Input = ({ id, type, labelText, ...otherProps }) => {
     return (
         <>
             <label htmlFor={id}>{labelText}</label>
-            {type === "textarea" ? <textarea id={id} rows="10" {...otherProps}></textarea> : <input type={type} id={id} {...otherProps} />}
+            {type === "textarea" ? <textarea id={id} rows="10" {...otherProps}></textarea> : <input type={type} id={id} {...otherProps} required />}
         </>
     );
 };
