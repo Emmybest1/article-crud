@@ -1,0 +1,60 @@
+$bgColor: #979797;
+$btnColor: #2f8e89;
+/*------------------------------------------------
+  General Styling
+ *------------------------------------------------*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+img {
+    display: block;
+    object-fit: contain;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+[type="submit"],
+[type="button"],
+[type="reset"] {
+    color: #fff;
+    cursor: pointer;
+    background-color: $btnColor;
+    border: 0;
+    margin-top: 2em;
+    padding: 7px 10px;
+    max-width: 150px;
+    transition: all 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+button:hover {
+    transform: scale(0.9);
+}
+
+/*------------------------------------------------
+  Layout Styling
+ *------------------------------------------------*/
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 50px;
+}
+
+@mixin container-flex($direction, $justifyContent) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+}
