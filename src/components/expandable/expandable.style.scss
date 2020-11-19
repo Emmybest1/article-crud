@@ -1,0 +1,13 @@
+.expandable-bar {
+    width: 150px;
+    border-bottom: solid 3px #000;
+    background-color: #000;
+    height: 30px;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 110px;
+    left: 150px;
+    cursor: pointer;
+}

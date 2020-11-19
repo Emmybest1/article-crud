@@ -1,0 +1,25 @@
+.left-nav-container {
+    display: flex;
+
+    & aside {
+        width: 14.6%;
+        height: 100vh;
+        background-color: #fff;
+        border-right: solid 1px #eee;
+        position: relative;
+
+        & .left-nav-items-container li {
+            padding: 10px;
+            border-bottom: solid 0.5px #777777;
+
+            & .anchor {
+                color: #000;
+                font-size: 0.8em;
+            }
+        }
+    }
+    & .expand-btn {
+        text-align: center;
+        color: #fff;
+    }
+}
